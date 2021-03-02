@@ -29,12 +29,12 @@ export class Detail extends Component {
     })
   }
   _goBack=()=>{
-    window.history.back()
+    window.history.back() 
   }
 
   componentDidMount() {
-    const {movieId} = this.props.match.params;
-    this._fetchMovie({id:movieId})
+    const {id} = this.props.match.params;
+    this._fetchMovie({id:id})
 
   }
 
